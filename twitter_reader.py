@@ -86,9 +86,19 @@ plt.show()
 print("Accuracy:", accuracy_score(y_test, y_pred))
 
 
-sample = "you are a bitch"
+sample = "you are amazing"
 sample = clean_data(sample)
 sample_transformed = cv.transform([sample])
 prediction = dt.predict(sample_transformed)
 print("Prediction for sample:", prediction[0])
+
+
+sample1 = "Women should stay in the kitchen where they belong."
+sample1 = clean_data(sample1)
+sample_transformed = cv.transform([sample1])
+prediction = dt.predict(sample_transformed)
+print("Prediction for sample1:", prediction[0])
+
+
+
 
